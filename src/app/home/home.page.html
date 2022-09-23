@@ -1,0 +1,27 @@
+<ion-content>
+  <img src="../../assets/Coracom.png" alt="" class="center">
+  <img src="../../assets/TOPROSA.png" alt="" class="top">
+  <img src="../../assets/Laço.png" alt="" class="laço">
+
+
+
+
+
+  
+  <input type="text" [(ngModel)]="nome1" placeholder="1ª Pessoa">
+  <div class="icone">
+    <ion-icon name="add"></ion-icon>
+  </div>
+  <input type="text" [(ngModel)]="nome2" placeholder="2ª Pessoa">
+  <ion-button (click)="calcular()" expand="full" color="danger" id="abrir-resposta">Calcular</ion-button>
+
+  <ion-modal id="resposta" #modal trigger="abrir-resposta">
+    <ng-template>
+      <div class="wrapper">
+        <h1>{{porcentagem}}%</h1>
+      </div>
+    </ng-template>
+  </ion-modal>
+  <img src="../../assets/coracaoembaixo.png" alt="" class="baixo">
+  <img src="../../assets/baixorosa.png" alt="" class="baixo2">
+</ion-content>
